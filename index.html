@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+   
+
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div id="nameInput">
+            <label for="playerX">Player X Name: </label>
+            <input type="text" id="playerX" placeholder="Enter name for Player X">
+            <br>
+            <label for="playerO">Player O Name: </label>
+            <input type="text" id="playerO" placeholder="Enter name for Player O">
+            <br>
+            <button id="startGame">Start Game</button>
+        </div>
+        <div id="game" class="hidden">
+            <div class="board" id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="status" id="status">Player X's Turn</div>
+            <div id="scoreboard">
+                <h3>Scoreboard</h3>
+                <ul id="scoreList"></ul>
+            </div>
+        </div>
+        <div id="resultScreen" class="hidden">
+            <h2 id="resultMessage"></h2>
+            <button id="newGame">New Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
